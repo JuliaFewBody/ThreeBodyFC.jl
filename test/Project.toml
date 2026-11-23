@@ -1,0 +1,6 @@
+[deps]
+ThreeBodyFC = "1869996a-39bd-4d03-8762-515c9d8689da"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+Test = "1"

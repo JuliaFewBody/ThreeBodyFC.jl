@@ -1,0 +1,10 @@
+name = "ThreeBodyFC"
+uuid = "1869996a-39bd-4d03-8762-515c9d8689da"
+authors = ["Satoshi Mitsui"]
+version = "0.0.1"
+
+[compat]
+julia = "1.12"
+
+[workspace]
+projects = ["test"]
