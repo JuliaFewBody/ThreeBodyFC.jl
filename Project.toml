@@ -1,9 +1,25 @@
 name = "ThreeBodyFC"
 uuid = "1869996a-39bd-4d03-8762-515c9d8689da"
 authors = ["Satoshi Mitsui"]
-version = "0.0.1"
+version = "0.1.0"
+
+[deps]
+GenericLinearAlgebra = "14197337-ba66-59df-a3e3-ca00e7dcff7a"
+HighPrecisionLinearAlgebra = "d87fc852-dd95-4f87-831c-e4755d032461"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MultiFloats = "bdf0d083-296b-4888-a5b6-7498122e68a5"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Serialization = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
+
+[sources]
+HighPrecisionLinearAlgebra = {url = "https://github.com/JuliaFewBody/HighPrecisionLinearAlgebra.jl"}
 
 [compat]
+GenericLinearAlgebra = "0.4"
+LinearAlgebra = "1"
+MultiFloats = "2, 3"
+Printf = "1"
+Serialization = "1"
 julia = "1.12"
 
 [workspace]
