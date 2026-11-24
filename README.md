@@ -33,6 +33,8 @@ Start Julia with threads (`julia -t 16`).
 | Results | `load_results`, `load_wavefunction`, `compare` |
 | Expectation values | `expectation`, `expectation_quad`, `variance`, `temple`, `distribution` |
 
+Relativistic, fine-structure and QED corrections and the Bethe logarithm are in `ThreeBodyFC.Experimental` (not yet optimized; the interface may change).
+
 ## Development
 
 ```shell

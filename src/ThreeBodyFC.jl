@@ -43,9 +43,22 @@ export NoSymmetry, Exchange
 export CholeskyInverseIteration, CanonicalCut, PivotedSubset
 export run_fc, count_basis, optimize_alpha, optimize_exponents, auto_exponents, auto_w2, w2_rule, set_rule, auto_form, auto_basis, auto_gaussr, late_greedy, thresholds, pair_scales, energy_error, hermiticity, default_exponents, default_symmetry, fmt, compare, load_results, load_wavefunction
 export expectation, DistancePower, TotalEnergy, KineticEnergy, PotentialEnergy, Delta, Cusp, variance, temple, distribution
-export expectation_quad, P4, LaplacianProduct, EnergyMinusVSquared, Retardation, InverseSquare, ArakiSucherPart, DrachmanDelta12, DrachmanDelta, KineticQuad, QTerm, PairAxis, LDot, LTensor, Uehling,
-       relativistic_correction, araki_sucher, qed_correction, breit_pauli, fine_structure, spin_hamiltonian, quad_type
-export short_range_sets, bethe_intermediate, bethe_spectrum, bethe_log, bethe_logarithm, qed_leading
+export expectation_quad, InverseSquare, DrachmanDelta12, DrachmanDelta, KineticQuad, PairAxis, quad_type
 export Float64x2, Float64x3, Float64x4
+
+"""
+    ThreeBodyFC.Experimental
+
+Relativistic, fine-structure and QED corrections and the Bethe logarithm. These are not yet optimized, and their names and
+signatures may change in any release. Load with `using ThreeBodyFC.Experimental`.
+"""
+module Experimental
+import ..ThreeBodyFC: P4, LaplacianProduct, EnergyMinusVSquared, Retardation, ArakiSucherPart, QTerm, LDot, LTensor, Uehling,
+    relativistic_correction, araki_sucher, qed_correction, breit_pauli, fine_structure, spin_hamiltonian,
+    short_range_sets, bethe_intermediate, bethe_spectrum, bethe_log, bethe_logarithm, qed_leading
+export P4, LaplacianProduct, EnergyMinusVSquared, Retardation, ArakiSucherPart, QTerm, LDot, LTensor, Uehling,
+    relativistic_correction, araki_sucher, qed_correction, breit_pauli, fine_structure, spin_hamiltonian,
+    short_range_sets, bethe_intermediate, bethe_spectrum, bethe_log, bethe_logarithm, qed_leading
+end
 
 end

@@ -1,5 +1,6 @@
 using Test
 using ThreeBodyFC
+using ThreeBodyFC.Experimental
 using ThreeBodyFC: IntegralContext, ElementCache, element!, KernelQuadrature, LogVariable, HamiltonianData, assemble, Key
 
 # On CI (single thread, time limit) only the fast test sets run; set THREEBODYFC_FULL_TESTS=true to run everything.
